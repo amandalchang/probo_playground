@@ -5,6 +5,7 @@ There is nothing you need to edit or fill in within this file, but feel free to 
 """
 
 from dataclasses import dataclass
+import math
 import random
 
 
@@ -31,6 +32,7 @@ class Position:
         Return in string format.
         """
         return f"X{self.x}Y{self.y}"
+
 
 
 @dataclass(unsafe_hash=True)
